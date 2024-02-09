@@ -1,0 +1,55 @@
+header {
+    background-color: #f0f0f0; /* Example background color */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px; /* Example padding */
+}
+
+.logo {
+    /* Add any specific styles for your logo */
+}
+
+.header-links-flex-container {
+    width: 100%;
+    margin-right: 80px;
+    display: flex;
+    gap: 44px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+.header-links-flex-container li {
+   
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 10px; /* Example spacing between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Example link color */
+}
+
+/* Optional: Add additional styling for the logo image */
+.logo img {
+    max-width: 100%; /* Example maximum width for the logo */
+    height: auto;
+}
