@@ -1,23 +1,36 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header Section */
 header {
-    background-color: #f0f0f0; /* Example background color */
+    background-color: #ffffff; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px; /* Example padding */
+    padding: 24px; 
 }
 
-.logo {
-    /* Add any specific styles for your logo */
+.main-logo {
+    
 }
 
 .header-links-flex-container {
     width: 100%;
     margin-right: 80px;
     display: flex;
-    gap: 44px;
+    gap: 52px;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
@@ -48,8 +61,48 @@ header {
     color: #333; /* Example link color */
 }
 
-/* Optional: Add additional styling for the logo image */
 .logo img {
     max-width: 100%; /* Example maximum width for the logo */
     height: auto;
+}
+
+/* Homepage Section */
+#homepage {
+    background-image: url('../assets/blue-hammer.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.title-container {
+    text-align: center;
+    position: relative;
+}
+
+.three-lawyers {
+    margin-top: 72px;
+}
+
+.three-lawyers img {
+    width: 61%;
+    height: auto;
+}
+
+h1 {
+    position: relative;
+    top: 160px;
+    font-size: 4.4rem;
+    color: white;
+}
+
+h3 {
+    position: absolute;
+    top: 710px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; 
+    font-size: 3rem;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    z-index: 2; 
 }
