@@ -68,7 +68,7 @@ header {
 
 /* Homepage Section */
 #homepage {
-    background-image: url('../assets/blue-hammer.png');
+    background-image: url('../assets/hammer-blue.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -77,15 +77,6 @@ header {
 .title-container {
     text-align: center;
     position: relative;
-}
-
-.three-lawyers {
-    margin-top: 72px;
-}
-
-.three-lawyers img {
-    width: 61%;
-    height: auto;
 }
 
 h1 {
@@ -112,7 +103,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     background-color: #8daed8;
 }
 
@@ -122,10 +113,15 @@ h3 {
     text-align: center;
 }
 
+.banner-content p {
+    font-size: 1.1rem;
+}
+
 .testimonial-img,
 .money-img,
 .trophy-img {
-    text-align: center; /* Center align text */
+    text-align: center; 
+    font-size: 1.1rem;
 }
 
 .banner-content h4 {
@@ -133,3 +129,42 @@ h3 {
     margin-bottom: auto;
 }
 
+/* Lawyer Team Styling Section */
+#lawyer-team {
+    color: black;
+    font-size: 1.7rem;
+    text-align: center;
+    transform: translateY(50%);
+    position: relative;
+    top: 40px;
+}
+
+.lawyer-container {
+    border: 1px solid red;
+    height: 60vh; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.lawyer-cards {
+    display: flex;
+    
+    background-color: grey;
+}
+
+.lawyer-cards p {
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+
+/* Buttons for Lawyer cards */
+.buttons-container {
+    text-align: center;
+}
+
+.buttons-container button {
+    margin: 10px;
+}
