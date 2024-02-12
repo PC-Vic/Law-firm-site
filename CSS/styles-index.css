@@ -91,7 +91,9 @@ h3 {
     top: 710px;
     left: 50%;
     transform: translateX(-50%);
-    color: white; 
+    color: rgb(43, 130, 201); 
+    -webkit-text-stroke: 1px rgb(31, 41, 77); /* For Safari/Chrome */
+    color: white;
     font-size: 3rem;
     white-space: nowrap;
     letter-spacing: 3px;
@@ -140,7 +142,6 @@ h3 {
 }
 
 .lawyer-container {
-    border: 1px solid red;
     height: 60vh; 
     display: flex; 
     flex-direction: row; 
@@ -149,16 +150,24 @@ h3 {
     justify-content: space-around;
 }
 
-.lawyer-cards {
-    display: flex;
-    
-    background-color: grey;
+.lawyer-card img {
+
+    display: block; /* Use 'block' display for images */
+    max-width: 100%; /* Constrain the width of the images */
+    height: auto; /* Maintain the aspect ratio */
+    width: auto; /* Reset the width property */
 }
 
-.lawyer-cards p {
+.lawyer-card figcaption {
     word-wrap: break-word; 
     overflow-wrap: break-word;
+    text-align: center;
 }
+
+
+
+
+
 
 /* Buttons for Lawyer cards */
 .buttons-container {
