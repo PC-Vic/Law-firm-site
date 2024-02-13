@@ -133,12 +133,12 @@ h3 {
 
 /* Lawyer Team Styling Section */
 #lawyer-team {
-    color: black;
+    color: #157FBD;
     font-size: 1.7rem;
     text-align: center;
     transform: translateY(50%);
     position: relative;
-    top: 40px;
+    top: 20px;
 }
 
 .lawyer-container {
@@ -148,14 +148,30 @@ h3 {
     justify-content: center; 
     align-items: center; 
     justify-content: space-around;
+    transform: translateY(10%);
 }
 
-.lawyer-card img {
+.lawyer-card {
+    position: relative;
+    transition: transform 0.3s ease;
+}
 
-    display: block; /* Use 'block' display for images */
-    max-width: 100%; /* Constrain the width of the images */
-    height: auto; /* Maintain the aspect ratio */
-    width: auto; /* Reset the width property */
+.lawyer-card:hover {
+    transform: scale(1.05) ;
+}
+
+
+.lawyer-card img {
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+    width: auto; 
+}
+
+.lawyer-card img:hover {
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+    
 }
 
 .lawyer-card figcaption {
@@ -164,16 +180,81 @@ h3 {
     text-align: center;
 }
 
-
-
-
-
-
 /* Buttons for Lawyer cards */
 .buttons-container {
     text-align: center;
+    margin-top: 20px;
+    
 }
 
 .buttons-container button {
-    margin: 10px;
+    height: 5vh;
+    width: 160px; 
+    margin-top: 70px;
+    padding: 10px;
 }
+
+.buttons-container button:first-child {
+    background-color: #157FBD;
+    border: #157FBD;
+    color: white;
+    font-weight: 800;
+    letter-spacing:.8px;
+}
+
+.buttons-container button:first-child:hover {
+    background-color: #ffffff;
+    color: #157FBD;
+    border: 2px solid #157FBD; 
+    cursor: pointer;
+    box-shadow: 0 0 4px rgb(59, 59, 59);
+}
+
+.buttons-container button:nth-child(2) {
+    background-color: #ffffff;
+    border: 2px solid #157FBD;
+    color: #157FBD;
+    font-weight: 800;
+    letter-spacing:.8px;
+}
+
+.buttons-container button:nth-child(2):hover {
+    background-color: #157FBD; 
+    border-color: #157FBD;
+    color: white; 
+    cursor: pointer;
+    box-shadow: 0 0 6px rgb(59, 59, 59);
+}
+
+.buttons-container button + button {
+    margin-left: 28px;
+}
+
+/* Practice cards section */
+#practice-heading {
+    font-size: 1.7rem;
+    text-align: center;
+    transform: translateY(200%);
+    margin-top: 50px;
+    margin-bottom: 110px;
+    
+    /* position: relative;
+    top: 20px; */
+}
+
+.grid-container-practice {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); 
+    grid-gap: 4px;
+    opacity: 0.9;
+    position: relative;
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 1300px; /* Optional: Limit maximum width for larger screens */
+}
+
+.card {
+    background-color: #8daed8;
+    width: 100%; /* Fill the grid cell */
+    height: 300px;
+}
+
