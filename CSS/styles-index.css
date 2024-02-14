@@ -37,8 +37,8 @@ header {
     font-size: 1.3rem;
 }
 
-.header-links-flex-container li {
-   
+header .header-links-flex-container li a {
+    text-decoration: none;
 }
 
 .nav-links {
@@ -68,7 +68,7 @@ header {
 
 /* Homepage Section */
 #homepage {
-    background-image: url('../assets/hammer-blue.png');
+    background-image: url('../assets/background/hammer-blue.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
