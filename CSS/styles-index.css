@@ -41,6 +41,47 @@ header .header-links-flex-container li a {
     text-decoration: none;
 }
 
+.header-links-flex-container li span.highlighted {
+    color: rgb(43, 130, 201); 
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: inherit; /* Start with the default text color */
+    }
+    50% {
+        color: red; /* Change text color to red */
+    }
+    100% {
+        color: inherit; /* Return to the default text color */
+    }
+}
+
+#wiggle {
+    animation: wiggle 2s normal, colorChange 6s ease 1;/* Apply the wiggle animation */
+}
+
+
 .nav-links {
     display: flex;
 }
@@ -68,7 +109,7 @@ header .header-links-flex-container li a {
 
 /* Scroll Header animation for event listener */
 .scrolled {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
+    box-shadow: 0 2px 4px rgb(102, 102, 102);
 }
 
 /* Homepage Section */
@@ -261,5 +302,10 @@ h3 {
     background-color: #8daed8;
     width: 100%; /* Fill the grid cell */
     height: 300px;
+}
+
+.card:hover {
+    background-color: #376bad;
+    cursor: pointer;
 }
 
