@@ -58,12 +58,17 @@ header .header-links-flex-container li a {
 
 .nav-links a {
     text-decoration: none;
-    color: #333; /* Example link color */
+    color: #333; 
 }
 
 .logo img {
-    max-width: 100%; /* Example maximum width for the logo */
+    max-width: 100%; 
     height: auto;
+}
+
+/* Scroll Header animation for event listener */
+.scrolled {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
 }
 
 /* Homepage Section */
