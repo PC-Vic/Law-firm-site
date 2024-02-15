@@ -58,12 +58,12 @@ hr {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     max-width: 79vw;
     margin: 0 auto;
-    /* margin-left: 24px; */
     justify-content: center;
-    border: 1px solid salmon;
     padding: 40px;
 }
 
-.social-media {
-    justify-content: flex-end;
+/* Fourth row */
+.copyright p {
+    text-align: center;
+    padding: 20px;
 }
