@@ -1,0 +1,65 @@
+/* .data-section {
+    background-image: url('../assets/images/background/Data-img.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+} */
+
+.navy-background {
+    background-color: rgb(6, 6, 61);
+    color: #8daed8;
+    height: 180vh;
+    transform: translateY(3%);
+}
+
+.cases-content {
+    width: 80%; 
+    max-width: 700px; 
+    margin: 0 auto; 
+    overflow-wrap: break-word;
+}
+
+.cases-main-heading {
+    color: #CFA238;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 60px;
+}
+
+.victory-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.victory-container p {
+    color: whitesmoke;
+}
+
+.victory-container .yellow-highlight {
+    color: #CFA238;
+}
+
+.yellow-highlight {
+    color:#CFA238;
+}
+
+/* Grid layout for Cases Section */
+.cases-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 0 auto;
+    grid-gap: 20px;
+    max-width: 150vh;
+}
+
+.cases-grid-wrapper p {
+    color: whitesmoke;
+}
+
+.cases-grid-item {
+    /* border: 1px solid #ccc; */
+    padding: 20px;
+    transform: translateY(20%);
+}
