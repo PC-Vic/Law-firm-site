@@ -30,24 +30,40 @@ hr {
 /* Second row */
 .locations-grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create columns with minimum width of 250px */
-    grid-gap: 20px; /* Add gap between grid items */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    grid-gap: 20px; 
     max-width: 80vw;
     margin: 0 auto;
-  }
-  
-  .location {
-   background color for better visibility 
-    padding: 10px; /* Add padding for spacing */
-  }
-  
-  .location p {
-    margin: 0; /* Remove default margin for paragraphs */
-  }
-  
-  @media screen and (max-width: 768px) {
+    padding: 40px;
+    text-align: center;
+}
+
+.location {
+    padding: 10px; 
+}
+
+.location p {
+    margin: 0; 
+}
+
+@media screen and (max-width: 768px) {
     .locations-grid-wrapper {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column width for smaller screens */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
     }
-  }
-  
+}
+
+/* Third row */
+.social-media-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    max-width: 79vw;
+    margin: 0 auto;
+    /* margin-left: 24px; */
+    justify-content: center;
+    border: 1px solid salmon;
+    padding: 40px;
+}
+
+.social-media {
+    justify-content: flex-end;
+}
