@@ -1,0 +1,34 @@
+/* Practice cards section */
+#practice-heading {
+    font-size: 1.7rem;
+    text-align: center;
+    transform: translateY(200%);
+    margin-top: 50px;
+    margin-bottom: 110px;
+    
+    /* position: relative;
+    top: 20px; */
+}
+
+.grid-container-practice {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); 
+    grid-gap: 4px;
+    opacity: 0.9;
+    position: relative;
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 1300px; /* Optional: Limit maximum width for larger screens */
+    margin-bottom: 12vh;
+}
+
+.card {
+    background-color: #8daed8;
+    width: 100%; /* Fill the grid cell */
+    height: 300px;
+}
+
+.card:hover {
+    background-color: #376bad;
+    cursor: pointer;
+}
+

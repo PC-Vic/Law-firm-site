@@ -1,0 +1,98 @@
+/* Lawyer Team Styling Section */
+#lawyer-team {
+    color: #157FBD;
+    font-size: 1.7rem;
+    text-align: center;
+    transform: translateY(50%);
+    position: relative;
+    top: 20px;
+}
+
+.lawyer-container {
+    height: 60vh; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    justify-content: space-around;
+    transform: translateY(10%);
+}
+
+.lawyer-card {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.lawyer-card:hover {
+    transform: scale(1.05) ;
+}
+
+
+.lawyer-card img {
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+    width: auto; 
+}
+
+.lawyer-card img:hover {
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+    
+}
+
+.lawyer-card figcaption {
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+/* Buttons for Lawyer cards */
+.buttons-container {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.buttons-container button {
+    height: 5vh;
+    width: 160px; 
+    margin-top: 70px;
+    padding: 10px;
+}
+
+.buttons-container button:first-child {
+    background-color: #157FBD;
+    border: #157FBD;
+    color: white;
+    font-weight: 800;
+    letter-spacing:.8px;
+}
+
+.buttons-container button:first-child:hover {
+    background-color: #ffffff;
+    color: #157FBD;
+    border: 2px solid #157FBD; 
+    cursor: pointer;
+    box-shadow: 0 0 4px rgb(59, 59, 59);
+}
+
+.buttons-container button:nth-child(2) {
+    background-color: #ffffff;
+    border: 2px solid #157FBD;
+    color: #157FBD;
+    font-weight: 800;
+    letter-spacing:.8px;
+}
+
+.buttons-container button:nth-child(2):hover {
+    background-color: #157FBD; 
+    border-color: #157FBD;
+    color: white; 
+    cursor: pointer;
+    box-shadow: 0 0 6px rgb(59, 59, 59);
+}
+
+.buttons-container button + button {
+    margin-left: 28px;
+}

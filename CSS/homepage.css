@@ -1,0 +1,64 @@
+/* Homepage Section */
+#homepage {
+    background-image: url('../assets/images/background/hammer-blue.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.title-container {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    position: relative;
+    top: 160px;
+    font-size: 4.4rem;
+    color: white;
+}
+
+h3 {
+    position: absolute;
+    top: 710px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(43, 130, 201); 
+    -webkit-text-stroke: 1px rgb(31, 41, 77); /* For Safari/Chrome */
+    color: white;
+    font-size: 3rem;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    z-index: 2; 
+}
+
+/* Banner Section */
+.banner-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #8daed8;
+}
+
+.banner-content {
+    position: relative;
+    bottom: 14px;
+    text-align: center;
+}
+
+.banner-content p {
+    font-size: 1.1rem;
+}
+
+.testimonial-img,
+.money-img,
+.trophy-img {
+    text-align: center; 
+    font-size: 1.1rem;
+}
+
+.banner-content h4 {
+    font-size: 2.3rem;
+    margin-bottom: auto;
+}

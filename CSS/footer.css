@@ -1,0 +1,51 @@
+/* footer {
+    background-color: #d4d4d4;
+    position: relative;
+    bottom: 0;
+}
+
+.awards-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 80vw;
+    margin: 0 auto;
+    gap: 5%;
+}
+
+.awards {
+    margin: 0 10px;
+}
+
+.awards img {
+    max-width: 100%;
+}
+ */
+
+ footer {
+    background-color: #ffffff;
+    position: relative;
+    bottom: 0;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.awards-grid-wrapper {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create columns with minimum width of 150px */
+    grid-gap: 20px; /* Add gap between grid items */
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.awards img {
+    max-width: 100%;
+    height: auto; /* Ensure images maintain aspect ratio */
+}
+
+hr {
+    border: none;
+    height: 2px; /* Set height of the horizontal rule */
+    width: 70%;
+    background-color: #ccc; /* Set background color */
+    margin: 20px auto;
+}

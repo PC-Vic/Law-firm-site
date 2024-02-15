@@ -1,0 +1,121 @@
+/* Header Section */
+header {
+    background-color: #ffffff; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px; 
+}
+
+.main-logo {
+    
+}
+
+.header-links-flex-container {
+    width: 100%;
+    margin-right: 80px;
+    display: flex;
+    gap: 52px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+header .header-links-flex-container li a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0000;
+}
+
+.header-links-flex-container li span.highlighted {
+    /* color: rgb(43, 130, 201);  */
+    color: rgb(43, 130, 201); 
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: inherit; /* Start with the default text color */
+    }
+    25% {
+        color: rgb(43, 130, 201); /* Change text color to red */
+    }
+    50% {
+        color: rgb(67, 159, 235); /* Change text color back to the original blue */
+    }
+    75% {
+        color: rgb(107, 107, 107); /* Change text color to dark grey */
+    }
+    100% {
+        color: inherit; /* Return to the default text color */
+    }
+}
+
+#wiggle {
+    animation: wiggle 2s normal;/* Apply the wiggle animation */
+}
+
+.highlighted {
+    animation: colorChange 10s ease infinite;
+}
+
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 10px; /* Example spacing between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333; 
+}
+
+.logo img {
+    max-width: 100%; 
+    height: auto;
+}
+
+/* Scroll Header animation for event listener */
+.scrolled {
+    box-shadow: 0 2px 4px rgb(102, 102, 102);
+}
