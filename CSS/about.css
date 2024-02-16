@@ -89,15 +89,41 @@ a:visited {
     font-size: 1.2rem;
 }
 
+/* About button */
+.about-button-container {
+    text-align: center;
+    transform: translateY(110%);
+}
+
+.about-btn {
+    height: 6vh;
+    width: 260px; 
+    /* width: 13vw; */
+    margin-top: 70px;
+    padding: 10px;
+    background-color: #CFA238;
+    border: #157FBD;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing:.8px;
+}
+
+.about-btn:hover {
+    background-color: #ffffff;
+    color: #157FBD;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgb(40, 143, 226);
+}
+
 /* About Footer */
 .about-footer {
     background-color: #ffffff;
     position: relative;
     bottom: 0;
-    margin-top: 340px;
+    margin-top: 200px;
     padding: 20px; /* Add padding for better spacing */
 }
-
 
 /* Third row */
 .about-social-media-wrapper {
@@ -114,5 +140,4 @@ a:visited {
     text-align: center;
     padding: 20px;
 }
-
 
