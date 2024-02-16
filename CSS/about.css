@@ -89,6 +89,30 @@ a:visited {
     font-size: 1.2rem;
 }
 
+/* About Footer */
+.about-footer {
+    background-color: #ffffff;
+    position: relative;
+    bottom: 0;
+    margin-top: 340px;
+    padding: 20px; /* Add padding for better spacing */
+}
 
+
+/* Third row */
+.about-social-media-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    max-width: 79vw;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Fourth row */
+.about-copyright p {
+    text-align: center;
+    padding: 20px;
+}
 
 
