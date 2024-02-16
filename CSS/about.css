@@ -1,0 +1,94 @@
+/* #about-title-background {
+    background-image: url("../assets/images/background/about-background2.png");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+} */
+
+/* Header About Section */
+/* Header Section */
+.about-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 160px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.about-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-10%)
+}
+
+.dark-logo img {
+    width: 300px;
+    transform: translateX(10%);
+}
+
+.about-link-container {
+    width: 100%;
+    margin-right: 80px;
+    display: flex;
+    gap: 52px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+.about-list-items a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0000;
+}
+
+.about-link-container li span.yellow-highlight {
+    /* color: rgb(43, 130, 201);  */
+    color: #CFA238;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+
+/* Scroll Header animation for event listener */
+.scrolled {
+    box-shadow: 0 2px 4px rgb(102, 102, 102);
+}
+
+/* About Handshake Image */
+.about-title-container {
+    text-align: center;
+}
+
+.about-title {
+    color: rgb(48, 48, 48);
+    transform: translateY(300%);
+    font-size: 2.5rem;
+}
+
+.about-handshake-container img {
+    transform: translateY(35%);
+    height: 45vh;
+    width: 100%;
+    height: auto;
+} 
+
+.about-intro {
+    max-width: 70vw;
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+
+
+
