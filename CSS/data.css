@@ -9,7 +9,7 @@
 .navy-background {
     background-color: rgb(6, 6, 61);
     color: #8daed8;
-    height: 180vh;
+    height: 190vh;
     transform: translateY(3%);
 }
 
@@ -62,4 +62,31 @@
     /* border: 1px solid #ccc; */
     padding: 20px;
     transform: translateY(20%);
+}
+
+/* Button Section */
+.cases-button-container {
+    text-align: center;
+    transform: translateY(50%);
+}
+
+.cases-btn {
+    height: 6vh;
+    width: 260px; 
+    /* width: 13vw; */
+    margin-top: 70px;
+    padding: 10px;
+    background-color: #CFA238;
+    border: #157FBD;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing:.8px;
+}
+
+.cases-btn:hover {
+    background-color: #ffffff;
+    color: #157FBD;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgb(40, 143, 226);
 }
