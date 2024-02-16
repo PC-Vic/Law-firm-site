@@ -1,6 +1,7 @@
 /* Practice cards section */
 #practice-heading {
     font-size: 1.7rem;
+    color: rgb(6, 6, 61);
     text-align: center;
     transform: translateY(200%);
     margin-top: 50px;

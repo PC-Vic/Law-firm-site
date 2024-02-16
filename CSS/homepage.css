@@ -62,3 +62,26 @@
     font-size: 2.3rem;
     margin-bottom: auto;
 }
+
+/* Testimonial Banner */
+.banner-quote-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 80px;
+    background-color: rgb(6, 6, 61);
+    /* #CFA238; */
+    margin-top: 130px;
+}
+
+.banner-quote {
+    color: whitesmoke;
+    line-height: 1.6;
+    width: 82vw;
+}
+
+.blue-highlight {
+    color: #44ace9;
+}
