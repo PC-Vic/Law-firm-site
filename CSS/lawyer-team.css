@@ -1,7 +1,7 @@
 /* Lawyer Team Styling Section */
 #lawyer-team {
     color: #157FBD;
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     text-align: center;
     transform: translateY(50%);
     position: relative;
@@ -50,8 +50,7 @@
 /* Buttons for Lawyer cards */
 .buttons-container {
     text-align: center;
-    margin-top: 20px;
-    
+    margin-top: 32px;
 }
 
 .buttons-container button {
