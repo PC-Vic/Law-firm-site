@@ -116,6 +116,40 @@ a:visited {
     box-shadow: 0 0 4px rgb(40, 143, 226);
 }
 
+/* About Banner */
+.about-banner-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #363636;
+    margin-top: 100px;
+    transform: translateY(60%);
+    color: whitesmoke;
+}
+
+.about-banner-content {
+    position: relative;
+    bottom: 14px;
+    text-align: center;
+}
+
+.about-banner-content p {
+    font-size: 1.1rem;
+}
+
+.about-testimonial-img,
+.about-money-img,
+.about-trophy-img {
+    text-align: center; 
+    font-size: 1.1rem;
+}
+
+.about-banner-content h4 {
+    font-size: 2.3rem;
+    margin-bottom: auto;
+}
+
 /* About Footer */
 .about-footer {
     background-color: #ffffff;
@@ -128,8 +162,8 @@ a:visited {
 /* Third row */
 .about-social-media-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    max-width: 79vw;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    max-width: 69vw;
     margin: 0 auto;
     justify-content: center;
     padding: 40px;
@@ -141,3 +175,6 @@ a:visited {
     padding: 20px;
 }
 
+.about-banner-content h4 {
+    color: #CFA238;
+}
