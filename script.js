@@ -1,5 +1,5 @@
 
-// JavaScript code to change header color on scroll
+// Change header color on scroll
 window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
     var scrollPosition = window.scrollY;

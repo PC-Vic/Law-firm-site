@@ -1,17 +1,17 @@
-/* #about-title-background {
+#about-title-background {
     background-image: url("../assets/images/background/about-background2.png");
     background-size: cover;
     background-position: center center;
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: -1;
-} */
+    margin-top: -35px;
+    /* z-index: -1; */
+}
 
 /* Header About Section */
-/* Header Section */
 .about-header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 160px;
@@ -57,7 +57,6 @@ a:visited {
     margin-right: 8px;
 }
 
-
 /* Scroll Header animation for event listener */
 .scrolled {
     box-shadow: 0 2px 4px rgb(102, 102, 102);
@@ -70,12 +69,12 @@ a:visited {
 
 .about-title {
     color: rgb(48, 48, 48);
-    transform: translateY(300%);
+    transform: translateY(1280%);
     font-size: 2.5rem;
 }
 
 .about-handshake-container img {
-    transform: translateY(35%);
+    transform: translateY(6%);
     height: 45vh;
     width: 100%;
     height: auto;
