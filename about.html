@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/index.css">
-    <!-- <link rel="stylesheet" href="./CSS/header.css"> -->
     <link rel="stylesheet" href="./CSS/about.css">
     <title>Smith and Associates injury lawyers</title>
 </head>
@@ -12,26 +11,22 @@
     <header class="about-header">
         <section class="about-header-container">
         <!-- About Website Logo -->
-            <a href="index.html">
-                <div class="dark-logo">
+            
+            <div class="dark-logo">
+                <a href="index.html">
                     <img src="./assets/images/logo-banner/about-logo.png" alt="company logo">
-                </div>
-            </a>
+                </a>
+            </div>
         <!-- About Header Links -->
-            <nav>
+            <nav id="js-nav" class="nav">
                 <ul class="about-link-container">
-                    <li class="about-list-items"><a href="index.html">HOME</a></li>
+                    <li class="about-list-items"><a href="index.html#lawyer-team">HOME</a></li>
                     <!-- <li class="about-list-items">CAR ACCIDENTS</li> -->
                     <li class="about-list-items">CONTACT</li>
                     <li class="about-list-items"><span class="yellow-highlight">CALL</span>(203) 123-1567</li>
                 </ul>
             </nav>
-            <!-- Hamburger Menu-->
-            <div class="hamburger-menu">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+            <!-- Hamburger Button-->
         </section>
     </header>
 
@@ -122,5 +117,6 @@
             </div>
         </article>
     </footer>
+    <script src="./about.js"></script>
 </body>
 </html>

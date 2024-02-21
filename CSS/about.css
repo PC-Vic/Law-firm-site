@@ -31,6 +31,10 @@
     transform: translateX(10%);
 }
 
+.dark-logo img:hover {
+    cursor: pointer;
+}
+
 .about-link-container {
     width: 100%;
     margin-right: 80px;
@@ -61,78 +65,7 @@ a:visited {
     box-shadow: 0 2px 4px rgb(102, 102, 102);
 }
 
-/* Hamburger Menu */
-.hamburger-menu {
-    display: none;
-}
-
-@media (max-width: 885px) {
-    .about-link-container {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: block;
-        position: absolute;
-        cursor:pointer;
-        right: 24px;
-        top: 44px;
-        z-index: 1000;
-    }
-
-    .hamburger-menu div {
-        width: 35px;
-        height: 5px;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
-
-    .hamburger-menu div:hover {
-        background-color: #CFA238;
-    }
-}
-
-/* Hamburger Menu Active */
-.nav-menu {
-    display: none; /* Initially hidden */
-}
-
-.hamburger-menu {
-    cursor: pointer;
-}
-
-/* .line {
-    width: 30px;
-    height: 4px;
-    background-color: #333;
-    margin: 5px 0;
-    transition: transform 0.3s ease;
-} */
-
-/* Rotate lines for open/close effect */
-.hamburger-menu.active .line:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.hamburger-menu.active .line:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-menu.active .line:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
-/* Media query for small screens */
-@media screen and (max-width: 768px) {
-    .nav-menu {
-        display: none; /* Hide the links */
-    }
-
-    .hamburger-menu {
-        display: block; /* Show the hamburger menu */
-    }
-}
+/* Hamburger Side Menu Styling */
 
 
 
@@ -181,6 +114,27 @@ a:visited {
     .about-title {
         font-size: 1.8rem;
         max-width: 1100px;
+    }
+}
+
+@media (max-width: 834px) {
+    .about-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 736px) {
+    .about-title {
+        margin-bottom: 90px;
+        font-size: 1.7rem;
+    }
+    
+}
+
+@media (max-width: 568px) {
+    .about-title {
+        font-size: 1.8rem;
+        margin-bottom: 150px;
     }
 }
 
@@ -298,10 +252,16 @@ a:visited {
     padding: 40px;
 }
 
+@media (min-width: 375px) and (max-width: 1492px) {
+    .social-media {
+        margin-bottom: 20px;
+    }
+}
+
 /* Fourth row */
 .about-copyright p {
     text-align: center;
-    padding: 20px;
+    padding: 50px;
 }
 
 .about-banner-content h4 {
