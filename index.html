@@ -27,9 +27,32 @@
                     <li><a href="#homepage">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="#lawyer-team">ATTORNEYS</a></li>
-                    <li>CAR ACCIDENTS</li>
+                    <li>TESTIMONIALS</li>
                     <li>CONTACT</li>
                     <li id="wiggle"><span class="highlighted">CALL</span>(203) 123-1567</li>
+        <!-- Hamburger Button-->
+                    <li onclick = showSidebar() class="about-list-items hamburger">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                        </a>
+                    </li>
+        <!-- Sidebar Section -->
+                <ul class="sidebar">
+                    <li onclick = hideSidebar() class="close-icon">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li id="sidebar-logo">
+                        <img src="./assets/images/logo-banner/sidebar-logo.png" alt="small logo">
+                    </li>
+                    <li class=""><a href="#">HOME</a></li>
+                    <li class=""><a href="#">ATTORNEYS</a></li>
+                    <li class=""><a href="#">TESTIMONIALS</a></li>
+                    <li class=""><a href="#">CONTACT</a></li>
+                    <li id="sidebar-call" class=""><span class="yellow-highlight">CALL Today<br></span>(203) 123-1567</li>
+                </ul>
                 </ul>
             </nav>
         </section>
