@@ -69,8 +69,25 @@ a:visited {
     transform: translateY(-14%);
 }
 
-.scrolled {
-    box-shadow: 0 2px 4px rgb(102, 102, 102);
+.close-icon {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(30%);
+}
+
+@media (max-width: 1450px) {
+    .hide-for-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .dark-logo img {
+        display: none;
+    }
 }
 
 /* Sidebar */
@@ -137,7 +154,9 @@ a:visited {
 }
 
 .sidebar a:hover {
-    color: #CFA238;
+    color: #157FBD;
+    text-decoration: underline;
+    border-radius: 50%;
     padding: 0 30px;
     height: 100%;
     text-shadow: 2 1 2px #157FBD;
