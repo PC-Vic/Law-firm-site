@@ -83,6 +83,12 @@ a:visited {
     fill:rgb(40, 143, 226);
 }
 
+@media (min-width: 1451px) {
+    .hamburger {
+        display: none;
+    }
+}
+
 @media (max-width: 1450px) {
     .hide-for-mobile {
         display: none;

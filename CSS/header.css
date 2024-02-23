@@ -167,6 +167,18 @@ a:visited {
     justify-content: flex-start;
 }
 
+@media (min-width: 1451px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 1451px) {
+    .hide-header-links {
+        display: none;
+    }
+}
+
 #sidebar-logo img {
     display: block;
     margin: 0 auto;
