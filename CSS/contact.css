@@ -90,9 +90,52 @@ a:visited {
     height: auto;
 }
 
-/* Media query for smaller screen sizes */
-@media screen and (max-width: 768px) {
-    .social-media img {
-        width: 8vw; /* Adjust size for smaller screens */
-    }
+/* Form Section */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    transform: translateX(25%);
 }
+
+.free-case-evaluation {
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.free-case-evaluation h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.free-case-evaluation input[type="text"],
+.free-case-evaluation input[type="email"],
+.free-case-evaluation input[type="tel"],
+.free-case-evaluation textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.free-case-evaluation input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #CFA238;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.free-case-evaluation input[type="submit"]:hover {
+    background-color: #CFA238;
+}
+
+/* Footer Section */
