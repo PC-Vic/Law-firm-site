@@ -16,7 +16,7 @@ body {
 }
 
 
-/* Header About Section */
+/* Header Section */
 .contact-header {
     position: absolute;
     top: 0;
@@ -74,4 +74,25 @@ a:visited {
     color: #CFA238;
     font-weight: 600;
     margin-right: 8px;
+}
+
+/* Social Media logo */
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+    transform: translateX(100%);
+    gap: 20px;
+    margin-right: 80px;
+}
+
+.social-media img {
+    width: 4w;
+    height: auto;
+}
+
+/* Media query for smaller screen sizes */
+@media screen and (max-width: 768px) {
+    .social-media img {
+        width: 8vw; /* Adjust size for smaller screens */
+    }
 }
