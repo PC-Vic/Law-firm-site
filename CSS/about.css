@@ -49,6 +49,9 @@
 .about-list-items a {
     text-decoration: none;
 }
+.about-list-items a:hover {
+    color: #CFA238;
+}
 
 a:visited {
     color: #0000;
