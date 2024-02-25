@@ -11,8 +11,7 @@ body {
     width: 50%; 
     height: 100vh; 
     background-image: url('../assets/images/background/form-image.png');
-    background-size: 100% auto;
-    background-position: left-top;
+    background-size: cover;
     z-index: -1; 
 }
 
