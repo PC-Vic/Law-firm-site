@@ -12,33 +12,36 @@
     <header class="contact-header">
         <main class="contact-header-container">
             <!-- Contact Main Logo -->
-            <a href="#homepage">
+            <a href="index.html">
                 <div class="contact-dark-logo">
                     <img src="./assets/images/logo-banner/contact-dark-logo.png">
                 </div>
             </a>
             <!-- Social Media logos -->
             <section class="social-media-container">
-                <a href="#homepage">
-                    <div class="social-media">
-                        <img src="./assets/images/logo-banner/sidebar-linkedin.png">
-                    </div>
-                </a>
-                <a href="#homepage">
-                    <div class="social-media">
-                        <img src="./assets/images/logo-banner/sidebar-facebook.png">
-                    </div>
-                </a>
-                <a href="#homepage">
-                    <div class="social-media">
-                        <img src="./assets/images/logo-banner/sidebar-twitter.png">
-                    </div>
-                </a>
-                <a href="#homepage">
-                    <div class="social-media">
-                        <img src="./assets/images/logo-banner/sidebar-gram.png">
-                    </div>
-                </a>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="./assets/images/logo-banner/sidebar-linkedin.png" alt="linkedin logo">
+                    </a>
+                </div>
+        
+                <div class="social-media">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./assets/images/logo-banner/sidebar-facebook.png" alt="facebook logo">
+                    </a>
+                </div>
+        
+                <div class="social-media">
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="./assets/images/logo-banner/sidebar-twitter.png" alt="twitter logo">
+                    </a>
+                </div>
+        
+                <div class="social-media">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="./assets/images/logo-banner/sidebar-gram.png" alt="instagram logo">
+                    </a>
+                </div>
             </section>
             <!-- Contact Header Links -->
             <nav id="contact-js-nav" class="contact-nav">
@@ -49,6 +52,7 @@
             </nav>
         </main>
     </header>
+    <!-- Background Image -->
         <article>
             <div id="contact-background-img"></div>
         </article>
@@ -56,33 +60,42 @@
         <!-- Form Section -->
     <section class="form-container">
         <div class="free-case-evaluation">
-            <h2>FREE CASE EVALUATION</h2>
+            <h2><span class="bright-highlight">FREE</span> CASE EVALUATION</h2>
+            <p>100% Secure and Confidential</p>
             <form action="#" method="post">
                 <div class="form-group">
-                    <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" name="first-name" required>
+                    <input type="text" id="first-name" name="first-name" required placeholder="First Name">
                 </div>
                 <div class="form-group">
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" name="last-name" required>
+                    <input type="text" id="last-name" name="last-name" required placeholder="Last Name">
                 </div>
+                <article class="form-group form-group-inline">
+                    <div class="form-group-inline-item">
+                        <input type="tel" id="phone" name="phone" required placeholder="Phone">
+                    </div>
+                    <div class="form-group-inline-item">
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                    </div>
+                </article>
                 <div class="form-group">
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <textarea id="story" name="story" rows="5" required placeholder="Share Your Story"></textarea>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="story">Share Your Story:</label>
-                    <textarea id="story" name="story" rows="5" required></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Submit</button>
+                <div id="contact-btn-container" class="form-group">
+                    <button class="contact-btn" type="submit">Let Us Help</button>
                 </div>
             </form>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-footer-container">
+            <a href="index.html">
+                <p>Back <span class="bright-highlight">HOME</span> ></p>
+            </a>    
+        </div>
+    </footer>
+    
+
 </body>
 </html>
