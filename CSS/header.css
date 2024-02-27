@@ -38,7 +38,7 @@ header {
 
 header .header-links-flex-container li a:hover {
     color: #2191d1;
-    text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.5); */
 }
 
 a:visited {
