@@ -11,6 +11,7 @@
     color: #8daed8;
     height: 210vh;
     transform: translateY(3%);
+    max-height: 8000vh;
 }
 
 .cases-content {
@@ -59,7 +60,6 @@
 }
 
 .cases-grid-item {
-    /* border: 1px solid #ccc; */
     padding: 20px;
     transform: translateY(20%);
 }
@@ -73,7 +73,6 @@
 .cases-btn {
     height: 6vh;
     width: 260px; 
-    /* width: 13vw; */
     margin-top: 70px;
     padding: 10px;
     background-color: #CFA238;
@@ -83,6 +82,7 @@
     font-weight: 800;
     letter-spacing:.8px;
 }
+
 
 .cases-btn:hover {
     background-color: #ffffff;
