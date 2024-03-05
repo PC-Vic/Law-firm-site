@@ -1,18 +1,26 @@
-/* .data-section {
-    background-image: url('../assets/images/background/Data-img.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: white;
-} */
 
 .navy-background {
     background-color: rgb(6, 6, 61);
     color: #8daed8;
-    height: 210vh;
-    transform: translateY(3%);
-    max-height: 8000vh;
+    height: auto; 
+    min-height: 110vh; 
+    padding: 20px; 
+    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
+
+@media screen and (min-width: 768px) {
+    .navy-background {
+        min-height: 110vh; /* Adjust as needed */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navy-background {
+        min-height: 110vh; /* Adjust as needed */
+    }
+}
+
 
 .cases-content {
     width: 80%; 
@@ -46,6 +54,19 @@
     color:#CFA238;
 }
 
+/* Stack items vertically on smaller screens */
+@media screen and (max-width: 930px) {
+    .victory-container {
+    flex-direction: column; 
+    align-items: center; 
+    }
+
+    .victory-container div {
+    margin-bottom: 20px; 
+    }
+}
+
+
 /* Grid layout for Cases Section */
 .cases-grid-wrapper {
     display: grid;
@@ -66,27 +87,26 @@
 
 /* Button Section */
 .cases-button-container {
+    margin-top: 80px; /* Adjusted margin-top to provide space above the button */
     text-align: center;
-    transform: translateY(50%);
 }
 
 .cases-btn {
-    height: 6vh;
+    height: auto; /* Changed height to auto to adapt to content */
     width: 260px; 
-    margin-top: 70px;
-    padding: 10px;
+    padding: 16px;
     background-color: #CFA238;
-    border: #157FBD;
+    border: none; /* Removed border color declaration */
     color: white;
     font-size: 1.1rem;
     font-weight: 800;
-    letter-spacing:.8px;
+    letter-spacing: 0.8px;
+    border-radius: 5px; /* Added border-radius for rounded corners */
+    cursor: pointer;
 }
-
 
 .cases-btn:hover {
     background-color: #ffffff;
     color: #157FBD;
-    cursor: pointer;
     box-shadow: 0 0 4px rgb(40, 143, 226);
 }
