@@ -5,22 +5,9 @@
     height: auto; 
     min-height: 110vh; 
     padding: 20px; 
-    margin-bottom: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
-
-@media screen and (min-width: 768px) {
-    .navy-background {
-        min-height: 110vh; /* Adjust as needed */
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .navy-background {
-        min-height: 110vh; /* Adjust as needed */
-    }
-}
-
 
 .cases-content {
     width: 80%; 

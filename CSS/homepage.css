@@ -24,13 +24,24 @@
     left: 50%;
     transform: translateX(-50%);
     color: rgb(43, 130, 201); 
-    -webkit-text-stroke: 1px rgb(31, 41, 77); /* For Safari/Chrome */
+    -webkit-text-stroke: 1px rgb(31, 41, 77); 
     color: white;
     font-size: 3rem;
-    white-space: nowrap;
     letter-spacing: 3px;
     z-index: 2; 
 }
+
+/* Media Query to decrease font size */
+@media (max-width: 768px) {
+    .homepage-heading {
+        font-size: 3.5rem;
+    }
+
+    .homepage-sub-heading {
+        font-size: 2.5rem;
+    }
+}
+
 
 /* Banner Section */
 .banner-container {
@@ -61,6 +72,14 @@
 .banner-content h4 {
     font-size: 2.3rem;
     margin-bottom: auto;
+}
+
+/* Media Query stack items */
+@media(max-width: 720px) {
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Testimonial Banner */
