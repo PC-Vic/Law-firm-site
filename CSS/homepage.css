@@ -42,6 +42,51 @@
     }
 }
 
+@media (max-width: 649px) {
+    .homepage-heading {
+        font-size: 3.0rem;
+    }
+
+    .homepage-sub-heading {
+        font-size: 2.1rem;
+    }
+}
+
+/* Mobile devices media query */
+@media (min-width: 375px) and (max-width: 480px) {
+    .homepage-heading {
+        font-size: 2.5rem;
+    }
+    
+    .homepage-sub-heading {
+        display: none;
+    }
+
+    #lawyer-team {
+        margin-top: -20px;
+        margin-bottom: 120px;
+    }
+
+    #practice-heading {
+        display: none;
+    }
+
+    #testimonials {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Media Query for medium devices */
+@media (min-width: 481px) and (max-width: 606px) {
+    #lawyer-team {
+        margin-top: -20px;
+        margin-bottom: 120px;
+    }
+    
+}
+
+
 
 /* Banner Section */
 .banner-container {
