@@ -18,7 +18,30 @@
     transform: translateY(10%);
 }
 
-.lawyer-card {
+@media (max-width: 1330px) {
+    .lawyer-container {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 200px;
+        transform: translateY(4%);
+    }
+
+    #lawyer-team {
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .lawyer-heading-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+}
+
+.lawyer-container {
     position: relative;
     transition: transform 0.3s ease;
 }
@@ -59,6 +82,12 @@
     margin-top: 70px;
     margin-left: 12px;
     padding: 10px;
+}
+
+@media (max-width: 1330px) {
+    .buttons-container button {
+        margin-top: 0px;
+    }
 }
 
 .buttons-container a:first-child button {
