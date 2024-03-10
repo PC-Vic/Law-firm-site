@@ -18,9 +18,13 @@
     color: white;
 }
 
+.title-container {
+    position: relative;
+}
+
 .homepage-sub-heading {
     position: absolute;
-    top: 710px;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
     color: rgb(43, 130, 201); 
@@ -28,8 +32,11 @@
     color: white;
     font-size: 3rem;
     letter-spacing: 3px;
-    z-index: 2; 
+    z-index: 2;
+    height: 20%;
 }
+
+
 
 /* Media Query to decrease font size */
 @media (max-width: 768px) {
