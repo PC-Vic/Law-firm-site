@@ -310,3 +310,9 @@ a:visited {
         transform: translateY(2%);
     }
 }
+
+@media (min-width: 275px) and (max-width: 767px) {
+    .form-container {
+        margin: 0 auto;
+    }
+}
