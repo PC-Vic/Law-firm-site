@@ -311,8 +311,13 @@ a:visited {
     }
 }
 
+/* form centered for mobile */
 @media (min-width: 275px) and (max-width: 767px) {
     .form-container {
         margin: 0 auto;
+    }
+
+    .social-media-container {
+        display: none;
     }
 }
