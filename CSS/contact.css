@@ -321,3 +321,37 @@ a:visited {
         display: none;
     }
 }
+
+/* Query for small form size for mobile */
+@media (min-width: 275px) and (max-width: 767px) {
+
+    .free-case-evaluation {
+        max-height: 65%; 
+    }
+
+    .form-group {
+        width: 55vw;
+        margin: 0 auto;
+    }
+
+    .contact-btn {
+        height: 5vh;
+        width: 180px;
+        font-size: 1rem;
+    }
+
+}
+
+/* Query for small font size form mobile */
+@media (min-width: 275px) and (max-width: 767px) {
+    .free-case-evaluation h2 {
+        font-size: 1.1rem;
+        text-wrap: nowrap;
+    }
+
+    .free-case-evaluation p {
+        font-size: 1rem;
+        
+    }
+
+}
