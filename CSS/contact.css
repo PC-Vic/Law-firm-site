@@ -326,7 +326,7 @@ a:visited {
 @media (min-width: 275px) and (max-width: 767px) {
 
     .free-case-evaluation {
-        max-height: 65%; 
+        max-height: 75%; 
     }
 
     .form-group {
