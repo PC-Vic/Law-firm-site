@@ -25,4 +25,17 @@ To view the website locally or deploy it to a server:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone 
+   git clone https://github.com/PC-Vic/Law-firm-site.git
+
+## Contributions
+Contributions to improve the website are welcome! If you have any suggestions, bug fixes, or feature enhancements, feel free to submit a pull request.
+
+## License
+This project is licensed under the MIT License
+
+## Contact
+For any inquiries please feel free to reach out:
+
+**GitHub**: https://github.com/PC-Vic
+
+**Email**: victordev@vicnieves.com
