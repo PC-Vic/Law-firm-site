@@ -43,6 +43,9 @@
 
 .lawyer-container {
     position: relative;
+}
+
+.lawyer-card {
     transition: transform 0.3s ease;
 }
 
