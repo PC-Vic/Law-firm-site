@@ -1,70 +1,137 @@
+/* ─── Footer ─────────────────────────────────────────────────── */
 footer {
-    background-color: #ffffff;
-    position: relative;
-    bottom: 0;
-    padding: 20px; /* Add padding for better spacing */
+    background-color: var(--color-white);
+    padding: 48px 24px 16px;
+    border-top: 1px solid var(--color-border);
 }
 
-/* First row */
+/* ─── Awards Row ─────────────────────────────────────────────── */
 .awards-grid-wrapper {
-    display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-    grid-gap: 20px; 
-    max-width: 80vw;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto 36px;
+    padding: 0 16px;
+}
+
+.awards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .awards img {
-    max-width: 100%;
-    height: auto; 
+    max-height: 72px;
+    width: auto;
+    display: block;
+    filter: grayscale(30%);
+    opacity: 0.85;
+    transition: filter 0.2s ease, opacity 0.2s ease;
 }
 
-hr {
+.awards img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+footer hr {
     border: none;
-    height: 2px; 
-    width: 70%;
-    background-color: #ccc; 
-    margin: 20px auto;
+    height: 1px;
+    background-color: var(--color-border);
+    width: 80%;
+    margin: 0 auto 36px;
 }
 
-/* Second row */
+/* ─── Locations Row ──────────────────────────────────────────── */
 .locations-grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
-    grid-gap: 20px; 
-    max-width: 80vw;
-    margin: 0 auto;
-    padding: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    max-width: 960px;
+    margin: 0 auto 40px;
+    padding: 0 16px;
     text-align: center;
 }
 
-.location {
-    padding: 10px; 
+.location address {
+    font-style: normal;
 }
 
 .location p {
-    margin: 0; 
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+/* ─── Social Media Row ───────────────────────────────────────── */
+.social-media-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    max-width: 600px;
+    margin: 0 auto 36px;
+    padding: 0 16px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media img {
+    height: 36px;
+    width: auto;
+    display: block;
+    opacity: 0.7;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    filter: grayscale(20%);
+}
+
+.social-media img:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    filter: grayscale(0);
+}
+
+/* ─── Copyright ──────────────────────────────────────────────── */
+.copyright-wrapper {
+    border-top: 1px solid var(--color-border);
+    padding-top: 20px;
+    margin-top: 8px;
+}
+
+.copyright p {
+    text-align: center;
+    font-size: 0.825rem;
+    color: var(--color-text-muted);
+    padding: 0;
+    margin: 0;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 600px) {
+    .awards-grid-wrapper {
+        gap: 20px;
+    }
+
+    .awards img {
+        max-height: 52px;
+    }
+
     .locations-grid-wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-/* Third row */
-.social-media-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    max-width: 79vw;
-    margin: 0 auto;
-    justify-content: center;
-    padding: 40px;
+@media (max-width: 380px) {
+    .locations-grid-wrapper {
+        grid-template-columns: 1fr;
+    }
 }
-
-/* Fourth row */
-.copyright p {
-    text-align: center;
-    padding: 20px;
-}
-

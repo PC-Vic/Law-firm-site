@@ -1,35 +1,67 @@
-/* Practice cards section */
+/* ─── Practice Areas Section ─────────────────────────────────── */
 #practice-heading {
-    font-size: 2.4rem;
-    color: rgb(6, 6, 61);
+    scroll-margin-top: var(--header-height);
+    font-family: var(--font-heading);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    color: var(--color-primary);
     text-align: center;
-    transform: translateY(200%);
-    margin-top: 30px;
-    margin-bottom: 150px;
-    
-    /* position: relative;
-    top: 20px; */
+    padding: 72px 24px 48px;
+    margin: 0;
+    letter-spacing: 0.05em;
+    transform: none;
+    position: static;
+    top: auto;
 }
 
+/* ─── Practice Cards Grid ────────────────────────────────────── */
 .grid-container-practice {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); 
-    grid-gap: 4px;
-    opacity: 0.9;
-    position: relative;
-    margin: 0 auto; /* Center the container horizontally */
-    max-width: 1300px; /* Optional: Limit maximum width for larger screens */
-    margin-bottom: 12vh;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 6px;
+    max-width: 1300px;
+    margin: 0 auto 80px;
+    padding: 0 6px;
 }
 
 .card {
-    background-color: #8daed8;
-    width: 100%; /* Fill the grid cell */
-    height: 300px;
-}
-
-.card:hover {
-    background-color: #376bad;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-light-bg);
+    aspect-ratio: 4 / 3;
     cursor: pointer;
 }
 
+.card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.38s ease, filter 0.38s ease;
+    filter: brightness(0.9);
+}
+
+.card:hover img {
+    transform: scale(1.06);
+    filter: brightness(0.72) saturate(1.1);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 680px) {
+    .grid-container-practice {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        aspect-ratio: 16 / 9;
+    }
+
+    #practice-heading {
+        padding: 56px 24px 36px;
+    }
+}

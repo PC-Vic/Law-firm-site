@@ -1,99 +1,161 @@
-
+/* ─── Testimonials / Cases Section ──────────────────────────── */
 .navy-background {
-    background-color: rgb(6, 6, 61);
-    color: #8daed8;
-    height: auto; 
-    min-height: 110vh; 
-    padding: 20px; 
-    margin-bottom: 70px;
-    padding-bottom: 70px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 80px 24px 80px;
+    margin-bottom: 0;
 }
 
 .cases-content {
-    width: 80%; 
-    max-width: 700px; 
-    margin: 0 auto; 
+    max-width: 700px;
+    margin: 0 auto;
     overflow-wrap: break-word;
 }
 
 .cases-main-heading {
-    color: #CFA238;
-    font-size: 2.5rem;
+    scroll-margin-top: var(--header-height);
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 3vw, 2.4rem);
+    color: var(--color-accent);
     text-align: center;
-    padding: 60px;
+    padding: 0 0 56px;
+    letter-spacing: 0.04em;
+    line-height: 1.3;
 }
 
+/* ─── Victory Header Row ─────────────────────────────────────── */
 .victory-container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
+    gap: 32px;
+    max-width: 960px;
+    margin: 0 auto 40px;
+    padding: 0 16px;
+}
+
+.victory-container h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    color: var(--color-white);
+    margin: 0 0 8px;
 }
 
 .victory-container p {
-    color: whitesmoke;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
 }
 
 .victory-container .yellow-highlight {
-    color: #CFA238;
+    color: var(--color-accent);
 }
 
 .yellow-highlight {
-    color:#CFA238;
+    color: var(--color-accent);
 }
 
-/* Stack items vertically on smaller screens */
-@media screen and (max-width: 930px) {
-    .victory-container {
-    flex-direction: column; 
-    align-items: center; 
-    }
-
-    .victory-container div {
-    margin-bottom: 20px; 
-    }
+.victory-container img {
+    height: 72px;
+    width: auto;
+    display: block;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
 }
 
+.navy-background hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 85%;
+    margin: 0 auto 56px;
+}
 
-/* Grid layout for Cases Section */
+/* ─── Cases Grid ─────────────────────────────────────────────── */
 .cases-grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 28px;
+    max-width: 1100px;
     margin: 0 auto;
-    grid-gap: 20px;
-    max-width: 150vh;
-}
-
-.cases-grid-wrapper p {
-    color: whitesmoke;
+    padding: 0 8px;
 }
 
 .cases-grid-item {
-    padding: 20px;
-    transform: translateY(20%);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    padding: 28px;
+    transform: none;
+    transition: background-color 0.2s ease;
 }
 
-/* Button Section */
+.cases-grid-item:hover {
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+.cases-grid-item h4 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin-bottom: 6px;
+}
+
+.cases-grid-item h5 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.04em;
+    margin-bottom: 14px;
+}
+
+.cases-grid-wrapper p {
+    font-size: 0.925rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+/* ─── CTA Button ─────────────────────────────────────────────── */
 .cases-button-container {
-    margin-top: 80px; /* Adjusted margin-top to provide space above the button */
+    margin-top: 64px;
     text-align: center;
 }
 
 .cases-btn {
-    height: auto; /* Changed height to auto to adapt to content */
-    width: 260px; 
-    padding: 16px;
-    background-color: #CFA238;
-    border: none; /* Removed border color declaration */
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 800;
-    letter-spacing: 0.8px;
-    border-radius: 5px; /* Added border-radius for rounded corners */
+    display: inline-block;
+    padding: 16px 48px;
+    background-color: var(--color-accent);
+    border: none;
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: var(--radius-md);
     cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .cases-btn:hover {
-    background-color: #ffffff;
-    color: #157FBD;
-    box-shadow: 0 0 4px rgb(40, 143, 226);
+    background-color: var(--color-accent-dark);
+    box-shadow: 0 4px 18px rgba(201, 162, 39, 0.4);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 720px) {
+    .victory-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cases-grid-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .navy-background {
+        padding: 56px 20px 64px;
+    }
 }

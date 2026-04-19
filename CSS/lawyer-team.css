@@ -1,127 +1,153 @@
-/* Lawyer Team Styling Section */
+/* ─── Attorney Team Section ──────────────────────────────────── */
+.lawyer-heading-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 24px 48px;
+}
+
 #lawyer-team {
-    color: #157FBD;
-    font-size: 2.2rem;
+    scroll-margin-top: var(--header-height);
+    font-family: var(--font-heading);
+    font-size: clamp(1.3rem, 2.5vw, 1.85rem);
+    color: var(--color-secondary);
     text-align: center;
-    transform: translateY(50%);
-    position: relative;
-    top: 20px;
+    letter-spacing: 0.04em;
+    margin: 0;
+    position: static;
+    top: auto;
+    transform: none;
+    max-width: 740px;
 }
 
+/* ─── Cards Container ────────────────────────────────────────── */
 .lawyer-container {
-    height: 60vh; 
-    display: flex; 
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center; 
-    justify-content: space-around;
-    transform: translateY(10%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 0 40px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+    transform: none;
+    position: static;
+    height: auto;
 }
 
-@media (max-width: 1330px) {
-    .lawyer-container {
-        flex-direction: column;
-        height: 100%;
-        margin-bottom: 200px;
-        transform: translateY(4%);
-    }
-
-    #lawyer-team {
-        width: 60vw;
-        display: flex;
-        justify-content: center;
-    }
-
-    .lawyer-heading-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-    }
-
-}
-
-.lawyer-container {
-    position: relative;
-}
-
+/* ─── Individual Card ────────────────────────────────────────── */
 .lawyer-card {
-    transition: transform 0.3s ease;
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+    text-align: center;
+    flex: 0 1 240px;
 }
 
 .lawyer-card:hover {
-    transform: scale(1.05) ;
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: var(--shadow-md);
 }
 
+.lawyer-cards {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+}
 
 .lawyer-card img {
-    display: block; 
-    max-width: 100%; 
-    height: auto; 
-    width: auto; 
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    transition: box-shadow 0.25s ease;
 }
 
 .lawyer-card img:hover {
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
     cursor: pointer;
-    
 }
 
 .lawyer-card figcaption {
-    word-wrap: break-word; 
-    overflow-wrap: break-word;
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
     text-align: center;
 }
 
-/* Buttons for Lawyer cards */
+.lawyer-card figcaption strong {
+    display: block;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 2px;
+}
+
+/* ─── CTA Buttons ────────────────────────────────────────────── */
 .buttons-container {
-    text-align: center;
-    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 16px 24px 72px;
 }
 
 .buttons-container button {
-    height: 5vh;
-    width: 160px; 
-    margin-top: 70px;
-    margin-left: 12px;
-    padding: 10px;
-}
-
-@media (max-width: 1330px) {
-    .buttons-container button {
-        margin-top: 0px;
-    }
+    height: auto;
+    width: 180px;
+    padding: 14px 20px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 0;
 }
 
 .buttons-container a:first-child button {
-    background-color: #157FBD;
-    border: #157FBD;
-    color: white;
-    font-weight: 800;
-    letter-spacing:.8px;
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    color: var(--color-white);
 }
 
 .buttons-container a:first-child button:hover {
-    background-color: #ffffff;
-    color: #157FBD;
-    border: 2px solid #157FBD; 
-    cursor: pointer;
-    box-shadow: 0 0 4px rgb(59, 59, 59);
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+    box-shadow: var(--shadow-sm);
 }
 
 .buttons-container a:nth-child(2) button {
-    background-color: #ffffff;
-    border: 2px solid #157FBD;
-    color: #157FBD;
-    font-weight: 800;
-    letter-spacing:.8px;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-secondary);
+    color: var(--color-secondary);
 }
 
 .buttons-container a:nth-child(2) button:hover {
-    background-color: #157FBD; 
-    border-color: #157FBD;
-    color: white; 
-    cursor: pointer;
-    box-shadow: 0 0 6px rgb(59, 59, 59);
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    box-shadow: var(--shadow-sm);
 }
 
+/* ─── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 900px) {
+    .lawyer-container {
+        gap: 24px;
+        padding: 0 24px 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .lawyer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .lawyer-card {
+        flex: 0 1 300px;
+        width: 100%;
+        max-width: 320px;
+    }
+}

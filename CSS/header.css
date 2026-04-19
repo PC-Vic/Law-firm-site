@@ -1,246 +1,250 @@
-/* Header Section */
+/* ─── Main Site Header ───────────────────────────────────────── */
 header {
-    background-color: #ffffff; 
+    background-color: var(--color-white);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    transition: box-shadow 0.3s ease;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px; 
-    transform: translateY(6%);
-}
-
-
-.main-logo {
-    transform: translateY(-7%);
-}
-
-.header-links-flex-container {
+    height: var(--header-height);
+    padding: 0 40px;
+    max-width: 1400px;
+    margin: 0 auto;
     width: 100%;
-    margin-right: 80px;
+}
+
+.main-logo img {
+    height: 54px;
+    width: auto;
+    display: block;
+}
+
+.nav-menu {
     display: flex;
-    gap: 52px;
-    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* ─── Nav Links ──────────────────────────────────────────────── */
+.header-links-flex-container {
+    display: flex;
+    align-items: center;
+    gap: 36px;
     list-style: none;
+    margin: 0;
     padding: 0;
-    font-size: 1.3rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
 }
 
 .header-links-flex-container li a {
-    text-decoration: none;
+    color: var(--color-text);
+    transition: color 0.2s ease;
 }
 
-header .header-links-flex-container li a:hover {
-    color: #2191d1;
-    /* text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.5); */
-}
-
-a:visited {
-    color: #0000;
+.header-links-flex-container li a:hover {
+    color: var(--color-secondary);
 }
 
 .header-links-flex-container li span.highlighted {
-    /* color: rgb(43, 130, 201);  */
-    color: rgb(43, 130, 201); 
-    font-weight: 600;
-    margin-right: 8px;
+    color: var(--color-secondary);
+    font-weight: 700;
+    margin-right: 5px;
 }
 
-.hamburger {
-    flex-direction: column;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    transform: translateY(-16%);
-    transform: translateX(100%);
+/* ─── Scroll Shadow ──────────────────────────────────────────── */
+.scrolled {
+    box-shadow: var(--shadow-md);
 }
 
-.close-icon {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateY(30%);
-}
-
-.close-icon:hover {
-    cursor: pointer;
-    fill:rgb(40, 143, 226);
-}
-
+/* ─── Call CTA Animation ─────────────────────────────────────── */
 @keyframes wiggle {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(5deg);
-    }
-    50% {
-        transform: rotate(-5deg);
-    }
-    75% {
-        transform: rotate(5deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
+    0%, 100% { transform: rotate(0deg); }
+    20%       { transform: rotate(4deg); }
+    60%       { transform: rotate(-4deg); }
 }
 
 @keyframes colorChange {
-    0% {
-        color: inherit; /* Start with the default text color */
-    }
-    25% {
-        color: rgb(43, 130, 201); /* Change text color to red */
-    }
-    50% {
-        color: rgb(67, 159, 235); /* Change text color back to the original blue */
-    }
-    75% {
-        color: rgb(107, 107, 107); /* Change text color to dark grey */
-    }
-    100% {
-        color: inherit; /* Return to the default text color */
-    }
+    0%, 100% { color: var(--color-text); }
+    40%      { color: var(--color-secondary); }
 }
 
 #wiggle {
-    animation: wiggle 2s normal;/* Apply the wiggle animation */
+    animation: wiggle 2.5s ease;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 #wiggle:hover {
-    color: #157FBD;
-    cursor: pointer;
+    color: var(--color-secondary);
 }
 
 .highlighted {
     animation: colorChange 10s ease infinite;
 }
 
-
-.nav-links {
-    display: flex;
-}
-
-.nav-links ul {
+/* ─── Hamburger Button ───────────────────────────────────────── */
+.hamburger {
+    cursor: pointer;
     list-style: none;
     display: flex;
+    align-items: center;
+    padding: 4px;
     margin: 0;
-    padding: 0;
 }
 
-.nav-links li {
-    margin-left: 10px; /* Example spacing between links */
+.hamburger a {
+    display: flex;
+    align-items: center;
+    line-height: 0;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #333; 
+.hamburger svg {
+    fill: var(--color-text);
+    display: block;
 }
 
-.logo img {
-    max-width: 100%; 
-    height: auto;
+/* ─── Sidebar Close Icon ─────────────────────────────────────── */
+.close-icon {
+    list-style: none;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+    padding: 4px;
+    margin: 0;
 }
 
-/* Scroll Header animation for event listener */
-.scrolled {
-    box-shadow: 0 2px 4px rgb(102, 102, 102);
+.close-icon a {
+    display: flex;
+    align-items: center;
+    line-height: 0;
 }
 
-/* Sidebar */
+.close-icon svg {
+    fill: var(--color-text-muted);
+    display: block;
+}
+
+.close-icon:hover svg {
+    fill: var(--color-secondary);
+}
+
+/* ─── Sidebar ────────────────────────────────────────────────── */
 .sidebar {
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: #ffffff;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
-    display: none;
+    width: 280px;
+    z-index: 1001;
+    background-color: var(--color-white);
+    box-shadow: -4px 0 28px rgba(0, 0, 0, 0.14);
+    display: none;           /* toggled to flex by JS */
     flex-direction: column;
-    align-items: center;
-    list-style: none;
-    text-decoration: none;
     align-items: flex-start;
-    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 52px;
+    overflow-y: auto;
 }
 
-/* media queries for header links and hamburger icon */
-@media (min-width: 1451px) {
-    .hamburger {
-        display: none;
-    }
-}
-
-@media (max-width: 1450px) {
-    .hide-header-links {
-        display: none;
-    }
+#sidebar-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 16px 24px 24px;
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 8px;
+    list-style: none;
 }
 
 #sidebar-logo img {
+    width: 160px;
+    height: auto;
     display: block;
-    margin: 0 auto;
-    width: 200px;
-    margin: 28px 0;
 }
 
 .sidebar li {
-    margin-bottom: 20px;
-    text-align: center;
-    color: #000000;
+    width: 100%;
+    list-style: none;
 }
 
 .sidebar a {
-    text-decoration: none;
-    color: #000000;
-    padding: 10px 0px;
     display: block;
-    transition: 0.3s;
-    font-size: 1.3rem;
-    padding: 0 20px;
-    margin-bottom: 20px;
+    color: var(--color-text);
+    font-size: 0.925rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    padding: 13px 28px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: var(--color-secondary);
+    background-color: var(--color-light-bg);
+    padding: 13px 28px;
+    text-shadow: none;
+    border-radius: 0;
+    height: auto;
+    cursor: pointer;
 }
 
 #sidebar-call {
     position: absolute;
     bottom: 0;
     width: 100%;
-    right: 10px;
-    padding: 20px;
-    color: #020202;
-    text-align: center;
-    font-size: 1.3rem;
+    padding: 20px 28px;
+    color: var(--color-text);
+    font-size: 0.975rem;
     font-weight: 600;
-    text-decoration: none;
-    /* background-color: #CFA238; */
-}
-
-.sidebar a:hover {
-    color: #157FBD;
-    text-decoration: underline;
-    border-radius: 50%;
-    padding: 0 30px;
-    height: 100%;
-    text-shadow: 2 1 2px #157FBD;
-    cursor: pointer;
+    border-top: 1px solid var(--color-border);
+    background-color: var(--color-white);
+    text-align: left;
 }
 
 .sidebar li span.yellow-highlight {
-    color: #157FBD;
-    font-weight: 600;
-
+    color: var(--color-secondary);
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 4px;
+    text-transform: uppercase;
 }
 
+/* ─── Responsive Breakpoints ─────────────────────────────────── */
+
+/* Desktop: show nav links, hide hamburger */
+@media (min-width: 1025px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+/* Tablet / Mobile: hide nav links, show hamburger */
+@media (max-width: 1024px) {
+    .hide-header-links {
+        display: none;
+    }
+    .header-container {
+        padding: 0 24px;
+    }
+}
+
+/* Full-width sidebar on very small screens */
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+    }
+}

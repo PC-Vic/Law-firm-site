@@ -1,168 +1,149 @@
-/* Homepage Section */
+/* ─── Hero Section ───────────────────────────────────────────── */
 #homepage {
+    scroll-margin-top: 0;
     background-image: url('../assets/images/background/hammer-blue.png');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: var(--header-height);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .title-container {
     text-align: center;
-    position: relative;
 }
 
 .homepage-heading {
-    position: relative;
-    top: 160px;
-    font-size: 4.4rem;
-    color: white;
-}
-
-.title-container {
-    position: relative;
+    font-family: var(--font-heading);
+    font-size: clamp(2.6rem, 6vw, 5.2rem);
+    font-weight: 700;
+    color: var(--color-white);
+    text-shadow: 2px 4px 20px rgba(0, 0, 0, 0.45);
+    margin: 0 0 24px;
+    position: static;
+    top: auto;
+    letter-spacing: 0.01em;
 }
 
 .homepage-sub-heading {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgb(43, 130, 201); 
-    -webkit-text-stroke: 1px rgb(31, 41, 77); 
-    color: white;
-    font-size: 3rem;
-    letter-spacing: 3px;
-    z-index: 2;
-    height: 20%;
+    font-size: clamp(1.1rem, 2.4vw, 1.85rem);
+    color: rgba(255, 255, 255, 0.92);
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    margin: 0;
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    z-index: auto;
+    height: auto;
+    -webkit-text-stroke: 0;
 }
 
-
-
-/* Media Query to decrease font size */
-@media (max-width: 768px) {
-    .homepage-heading {
-        font-size: 3.5rem;
-    }
-
-    .homepage-sub-heading {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 649px) {
-    .homepage-heading {
-        font-size: 3.0rem;
-    }
-
-    .homepage-sub-heading {
-        font-size: 2.1rem;
-    }
-}
-
-/* Mobile devices media query */
-@media (min-width: 375px) and (max-width: 480px) {
-
-    .sidebar {
-        width: 100%; 
-    }
-
-    .homepage-heading {
-        font-size: 2.5rem;
-    }
-    
-    .homepage-sub-heading {
-        display: none;
-    }
-
-    #lawyer-team {
-        margin-top: -20px;
-        margin-bottom: 120px;
-    }
-
-    #practice-heading {
-        display: none;
-    }
-
-    #testimonials {
-        font-size: 1.2rem;
-    }
-
-    .social-media {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 24px;
-    }
-
-}
-
-
-/* Media Query for medium devices */
-@media (min-width: 481px) and (max-width: 606px) {
-    #lawyer-team {
-        margin-top: -20px;
-        margin-bottom: 120px;
-    }
-    
-}
-
-/* Banner Section */
+/* ─── Stats Banner ───────────────────────────────────────────── */
 .banner-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    background-color: #8daed8;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 52px 40px;
+    background-color: var(--color-primary);
 }
 
 .banner-content {
-    position: relative;
-    bottom: 14px;
     text-align: center;
+    position: static;
+    bottom: auto;
+}
+
+.banner-content h4 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    color: var(--color-accent);
+    margin-bottom: 8px;
 }
 
 .banner-content p {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.82);
+    margin: 0;
 }
 
 .testimonial-img,
 .money-img,
 .trophy-img {
-    text-align: center; 
-    font-size: 1.1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.82);
 }
 
-.banner-content h4 {
-    font-size: 2.3rem;
-    margin-bottom: auto;
+.testimonial-img p,
+.money-img p,
+.trophy-img p {
+    margin: 10px 0 0;
 }
 
-/* Media Query stack items */
-@media(max-width: 720px) {
+.testimonial-img img,
+.money-img img,
+.trophy-img img {
+    height: 52px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+@media (max-width: 640px) {
     .banner-container {
         flex-direction: column;
-        align-items: center;
+        padding: 44px 24px;
+        gap: 36px;
     }
 }
 
-/* Testimonial Banner */
+/* ─── Testimonial Pull-Quote Banner ──────────────────────────── */
 .banner-quote-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1.5rem;
-    padding: 80px;
-    background-color: rgb(6, 6, 61);
-    /* #CFA238; */
-    margin-top: 100px;
+    padding: clamp(52px, 8vw, 96px) clamp(24px, 5vw, 80px);
+    background-color: #081534;
+    margin-top: 0;
 }
 
 .banner-quote {
-    color: whitesmoke;
-    line-height: 1.6;
-    width: 82vw;
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.92);
+    line-height: 1.75;
+    max-width: 860px;
+    width: 100%;
 }
 
 .blue-highlight {
-    color: #44ace9;
+    color: #7ec0f5;
+    font-style: italic;
+    font-size: 0.92em;
+    display: block;
+    margin-top: 16px;
+}
+
+/* ─── Responsive Fixes ───────────────────────────────────────── */
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    #lawyer-team {
+        margin-top: 0;
+    }
 }
