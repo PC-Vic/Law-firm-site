@@ -72,3 +72,22 @@ a:visited {
 .yellow-highlight {
     color: var(--color-accent);
 }
+
+/* ─── Shared Logo Sizing ─────────────────────────────────────── */
+.main-logo img {
+    height: 54px;
+    width: auto;
+    display: block;
+}
+
+/* ─── Active Nav Link ────────────────────────────────────────── */
+.header-links-flex-container a.active {
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+.about-link-container a.active,
+.sidebar a.active {
+    color: var(--color-accent);
+    font-weight: 600;
+}

@@ -22,14 +22,13 @@
     transform: none;
 }
 
-.dark-logo img {
-    height: 52px;
+.about-header .main-logo img {
+    height: 54px;
     width: auto;
     display: block;
-    transform: none;
 }
 
-.dark-logo img:hover {
+.about-header .main-logo img:hover {
     cursor: pointer;
 }
 

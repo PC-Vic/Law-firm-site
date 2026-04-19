@@ -28,14 +28,13 @@ body {
     transform: none;
 }
 
-.contact-dark-logo img {
-    height: 52px;
+.contact-header .main-logo img {
+    height: 54px;
     width: auto;
     display: block;
-    transform: none;
 }
 
-.contact-dark-logo img:hover {
+.contact-header .main-logo img:hover {
     cursor: pointer;
 }
 
