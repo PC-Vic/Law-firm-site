@@ -83,16 +83,8 @@
 }
 
 .cases-grid-item {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: var(--radius-md);
     padding: 28px;
     transform: none;
-    transition: background-color 0.2s ease;
-}
-
-.cases-grid-item:hover {
-    background-color: rgba(255, 255, 255, 0.09);
 }
 
 .cases-grid-item h4 {
